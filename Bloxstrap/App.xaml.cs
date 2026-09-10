@@ -5,6 +5,9 @@ using System.Windows.Shell;
 using System.Windows.Threading;
 
 using Microsoft.Win32;
+using Windows.Win32;
+using Windows.Win32.Foundation;
+using Windows.Win32.UI.WindowsAndMessaging;
 
 namespace Bloxstrap
 {
@@ -186,6 +189,13 @@ namespace Bloxstrap
             const string LOG_IDENT = "App::OnStartup";
 
             Locale.Initialize();
+
+            var consoleWindow = PInvoke.GetConsoleWindow();
+            if (consoleWindow != HWND.Null)
+            {
+                PInvoke.ShowWindow(consoleWindow, SHOW_WINDOW_CMD.SW_HIDE);
+                PInvoke.FreeConsole();
+            }
 
             base.OnStartup(e);
 
