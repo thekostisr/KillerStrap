@@ -14,16 +14,16 @@ namespace Bloxstrap
     public partial class App : Application
     {
 #if QA_BUILD
-        public const string ProjectName = "Fishstrap-QA";
+        public const string ProjectName = "KillerStrap-QA";
 #else
-        public const string ProjectName = "Fishstrap";
+        public const string ProjectName = "KillerStrap";
 #endif
         public const string ProjectOwner = "returnrqt";
-        public const string ProjectRepository = "returnrqt/fishstrap";
-        public const string ProjectDownloadLink = "https://github.com/returnrqt/fishstrap/releases";
+        public const string ProjectRepository = "returnrqt/killerstrap";
+        public const string ProjectDownloadLink = "https://github.com/returnrqt/killerstrap/releases";
         public const string ProjectHelpLink = "https://github.com/bloxstraplabs/bloxstrap/wiki";
-        public const string ProjectSupportLink = "https://github.com/returnrqt/fishstrap/issues/new";
-        public const string ProjectRemoteDataLink = "https://config.fishstrap.app/v1/Data.json";
+        public const string ProjectSupportLink = "https://github.com/returnrqt/killerstrap/issues/new";
+        public const string ProjectRemoteDataLink = "https://config.killerstrap.app/v1/Data.json";
 
         public const string RobloxPlayerAppName = "RobloxPlayerBeta.exe";
         public const string RobloxStudioAppName = "RobloxStudioBeta.exe";

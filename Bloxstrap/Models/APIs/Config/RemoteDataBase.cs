@@ -19,7 +19,7 @@ namespace Bloxstrap.Models.APIs.Config
         public bool KillFlags { get; set; } = false;
 
         [JsonPropertyName("deeplinkUrl")]
-        public string DeeplinkUrl { get; set; } = "https://fishstrap.app/joingame";
+        public string DeeplinkUrl { get; set; } = "https://killerstrap.app/joingame";
 
         // package maps
         [JsonPropertyName("packageMaps")]

@@ -120,15 +120,15 @@
             }
         }
 
-        public bool CleanerFishstrap
+        public bool CleanerKillerStrap
         {
-            get => CleanerItems.Contains("FishstrapLogs");
+            get => CleanerItems.Contains("KillerStrapLogs");
             set
             {
                 if (value)
-                    CleanerItems.Add("FishstrapLogs");
+                    CleanerItems.Add("KillerStrapLogs");
                 else
-                    CleanerItems.Remove("FishstrapLogs");
+                    CleanerItems.Remove("KillerStrapLogs");
             }
         }
     }
